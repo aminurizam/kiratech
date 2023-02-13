@@ -35,5 +35,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Choose any one of the below to implement:
 - [ ] Implement a search function to filter through the list - (Ongoing)
-- [ ] Implement a sorting function to sort the list
+- [ ] Implement a sorting function to sort the list - (Ongoing)
 - [ ] Implement pagination functionality, you can use https://randomuser.me/api/?page=page&results=20
