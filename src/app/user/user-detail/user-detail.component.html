@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>{{ data.user.name.first + " " + data.user.name.last }}</h1>
+<div mat-dialog-content>
+  <div class="capitalize">
+    <label for="">Gender: </label>
+    {{ data.user.gender }}
+  </div>
+  <div>
+    <label for="">Country: </label>
+    {{ data.user.location.country }}
+  </div>
+  <div>
+    <label for="">Email: </label>
+    {{ data.user.email }}
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-dialog-close class="bg-blue-400 hover:bg-blue-600 hover:text-white border rounded px-4 py-2 border-white hover:border-white">Close</button>
+</div>

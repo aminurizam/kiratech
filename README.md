@@ -1,4 +1,4 @@
-# Kiratech
+# Kiratech (This project is build using Angular)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## TODO
+
+### Requirement
+- [x] The application should provide a page to view a list of users. The data shown on the list can be anything that you see fit.
+- [x] The application should also provide a way to refresh the list.
+- [x] When selecting a user, it should open a window/pop up that shows more detailed information of the user.
+
+### Choose any one of the below to implement:
+- [ ] Implement a search function to filter through the list - (Ongoing)
+- [ ] Implement a sorting function to sort the list
+- [ ] Implement pagination functionality, you can use https://randomuser.me/api/?page=page&results=20
