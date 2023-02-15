@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { FormControl } from '@angular/forms';
+
 import { User } from './user';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserService } from './user.service';
@@ -11,6 +13,9 @@ import { UserService } from './user.service';
 })
 export class UserComponent implements OnInit {
   users: User[] = [];
+  filteredUsers: User[] = [];
+  name = new FormControl('');
+  query = '';
 
   constructor(private userService: UserService, public dialog: MatDialog) {}
 
@@ -37,5 +42,17 @@ export class UserComponent implements OnInit {
            user: user
         },
     })
+  }
+
+  onSearch(query:string) {
+    this.users = this.users.filter(el => el.name.first.toLowerCase().includes(query.toLowerCase()))
+  }
+
+  sortByCountryAsc() {
+    this.users = this.users.sort((el, next) => el.location.country.localeCompare(next.location.country));
+  }
+
+  sortByCountryDesc() {
+    this.users = this.users.sort((el, next) => next.location.country.localeCompare(el.location.country));
   }
 }

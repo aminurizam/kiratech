@@ -34,6 +34,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - [x] When selecting a user, it should open a window/pop up that shows more detailed information of the user.
 
 ### Choose any one of the below to implement:
-- [ ] Implement a search function to filter through the list - (Ongoing)
-- [ ] Implement a sorting function to sort the list - (Ongoing)
+- [x] Implement a search function to filter through the list
+- [x] Implement a sorting function to sort the list - (Click on the arrow icon for asc or desc order)
 - [ ] Implement pagination functionality, you can use https://randomuser.me/api/?page=page&results=20
